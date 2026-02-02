@@ -1,6 +1,7 @@
 
 function App() {
  
+  //Snack 1
   let data : unknown
 
   if(typeof data === "string"){
@@ -17,6 +18,18 @@ function App() {
   }else{
     console.log("Tipo non supportato")
   }
+
+  //Snack 2
+  type Dipendente = {
+    nome : string;
+    cognome : string;
+    annoNascita : number;
+    sesso : "m" | "f"
+    anniDiServizio: number[]
+  }
+
+
+
 
   return (
     <>
