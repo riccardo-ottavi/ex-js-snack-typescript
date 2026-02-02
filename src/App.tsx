@@ -28,7 +28,18 @@ function App() {
     anniDiServizio: number[]
   }
 
+  //Snack 3
+  type Developer = Dipendente & {
+    livelloEsperienza : "Junior" | "Mid" | "Senior",
+    linguaggi? : string[],
+    certificazioni : string[]
+  }
 
+  type ProjectManager = Dipendente & {
+    teamSize : number | null,
+    budgetGestito?: number,
+    stakeholderPrincipali : string[]
+  }
 
 
   return (
